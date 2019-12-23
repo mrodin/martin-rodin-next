@@ -1,6 +1,7 @@
-import React from 'react'
-import Head from 'next/head'
-import Nav from '../components/nav'
+import React from "react";
+import Head from "next/head";
+import { MainMenu } from "../components/menu";
+import { Button } from "@material-ui/core";
 
 const Home = () => (
   <div>
@@ -9,7 +10,15 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <Nav />
+    <MainMenu>
+      <div>MARTIN RODIN </div>
+
+      <div>
+        ABOUT
+        BLOG
+        CONTACT
+      </div>
+    </MainMenu>
 
     <div className="hero">
       <h1 className="title">Welcome to Next.js!</h1>
@@ -33,6 +42,10 @@ const Home = () => (
           <h3>Examples &rarr;</h3>
           <p>Find other example boilerplates on the Next.js GitHub.</p>
         </a>
+
+        <Button color="secondary" variant="contained">
+          Primary
+        </Button>
       </div>
     </div>
 
@@ -83,6 +96,6 @@ const Home = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;
