@@ -3,7 +3,7 @@ const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   webpack: config => {
-    config.resolve.alias["enums"] = path.join(__dirname, "enums");
+    config.resolve.extensions.push(".js", ".jsx", ".ts", ".tsx");
 
     config.plugins = config.plugins || [];
 
