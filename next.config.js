@@ -2,7 +2,9 @@ const path = require("path");
 const Dotenv = require("dotenv-webpack");
 
 module.exports = {
-  webpack: (config) => {
+  webpack: config => {
+    config.resolve.alias["enums"] = path.join(__dirname, "enums");
+
     config.plugins = config.plugins || [];
 
     config.plugins = [
@@ -10,10 +12,10 @@ module.exports = {
       // read the .env file
       new Dotenv({
         path: path.join(__dirname, ".env"),
-        systemvars: true,
+        systemvars: true
       })
     ];
 
     return config;
-  },
-}
+  }
+};
