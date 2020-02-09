@@ -3,26 +3,26 @@ import Head from "next/head";
 import { MainMenu } from "../components/menu";
 
 const Home = () => (
-    <div>
+    <span>
         <Head>
             <title>Home</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <MainMenu>
-            <div>MARTIN RODIN </div>
+            <span>MARTIN RODIN </span>
 
-            <div>ABOUT BLOG CONTACT</div>
+            <span>ABOUT BLOG CONTACT</span>
         </MainMenu>
 
-        <div className="hero">
+        <span className="hero">
             <h1 className="title">Welcome to Next.js!</h1>
             <p className="description">
                 To get started, edit <code>pages/index.js</code> and save to
                 reload.
             </p>
 
-            <div className="row">
+            <span className="row">
                 <a href="https://nextjs.org/docs" className="card">
                     <h3>Documentation &rarr;</h3>
                     <p>Learn more about Next.js in the documentation.</p>
@@ -43,8 +43,8 @@ const Home = () => (
                         Find other example boilerplates on the Next.js GitHub.
                     </p>
                 </a>
-            </div>
-        </div>
+            </span>
+        </span>
 
         <style jsx>{`
             .hero {
@@ -92,7 +92,7 @@ const Home = () => (
                 color: #333;
             }
         `}</style>
-    </div>
+    </span>
 );
 
 export default Home;

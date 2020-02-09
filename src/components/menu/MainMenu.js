@@ -1,5 +1,5 @@
 import React from "react";
 
-const MainMenu = ({ children }) => <div>{children}</div>;
+const MainMenu = ({ children }) => <span>{children}</span>;
 
 export default MainMenu;
