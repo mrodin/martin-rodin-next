@@ -1,11 +1,13 @@
-import { Author } from "./Author";
+import Author from "./Author";
 
-export type BlogPost = {
-  title: string;
-  slug: string;
-  heroImage: any;
-  description: string;
-  body: any;
-  author: Author;
-  publishDate: Date;
+type BlogPost = {
+    title: string;
+    slug: string;
+    heroImage: any;
+    description: string;
+    body: any;
+    author: Author;
+    publishDate: Date;
 };
+
+export default BlogPost;
